@@ -9,14 +9,14 @@ import { ChevronDown, Menu, Search, ShoppingBag, X, ArrowRight } from "lucide-re
 import Logo from "./Logo";
 import { useCart } from "@/context/CartContext";
 import { categories, products } from "@/lib/products";
-import { formatPrice, img } from "@/lib/site";
+import { formatPrice, img, site } from "@/lib/site";
 
 const nav = [
   { label: "Home", href: "/" },
   { label: "Shop", href: "/shop", mega: true },
   { label: "Meat Boxes", href: "/shop?category=boxes" },
   { label: "Our Story", href: "/#story" },
-  { label: "Recipes", href: "/#recipes" },
+  ...(site.showRecipes ? [{ label: "Recipes", href: "/#recipes" }] : []),
   { label: "Contact", href: "/#contact" },
 ];
 

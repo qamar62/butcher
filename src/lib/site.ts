@@ -13,6 +13,7 @@ export const site = {
   deliveryFee: 12,
   cutOff: "Order before 3 PM for same-day delivery",
   coupon: { code: "KHANZ20", percent: 20 },
+  showRecipes: false, // set to true to bring back the Recipes section + menu links
 };
 
 export const formatPrice = (n: number) =>

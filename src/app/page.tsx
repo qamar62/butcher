@@ -1,3 +1,4 @@
+import { site } from "@/lib/site";
 import HeroSlider from "@/components/home/HeroSlider";
 import {
   BestSellers, Boxes, CategoryRow, HowItWorks, MarqueeStrip, Newsletter, Promos, Recipes, Standards, Story, Testimonials, Welcome, WhyUs,
@@ -18,7 +19,7 @@ export default function Home() {
       <WhyUs />
       <Story />
       <Testimonials />
-      <Recipes />
+      {site.showRecipes && <Recipes />}
       <Newsletter />
     </>
   );

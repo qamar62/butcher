@@ -53,7 +53,7 @@ export default function Footer() {
         <div>
           <h4 className="font-display text-lg font-bold !text-white">Quick links</h4>
           <ul className="mt-5 space-y-3">
-            {[["Home", "/"], ["All products", "/shop"], ["Cart", "/cart"], ["Our story", "/#story"], ["Recipes", "/#recipes"]].map(([l, h]) => (
+            {[["Home", "/"], ["All products", "/shop"], ["Cart", "/cart"], ["Our story", "/#story"], ...(site.showRecipes ? [["Recipes", "/#recipes"]] : [])].map(([l, h]) => (
               <li key={l}><Link href={h} className="transition hover:pl-1 hover:text-brand">{l}</Link></li>
             ))}
           </ul>
