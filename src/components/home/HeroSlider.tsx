@@ -125,7 +125,7 @@ export default function HeroSlider() {
         animate={{ x: ["0%", "-20%"] }}
         transition={{ duration: 30, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
       >
-        KHANZ BUTCHERY
+        MAKKAH HALAL MEATS
       </motion.span>
 
       {/* Floating garnish */}

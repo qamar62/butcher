@@ -13,7 +13,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: { default: `${site.name} — ${site.tagline}`, template: `%s | ${site.name}` },
   description:
-    "Khanz Butchery: premium halal beef, lamb, chicken and BBQ cuts, hand-prepared daily and delivered fresh across New Zealand.",
+    "Makkah Halal Meats: premium halal beef, lamb, chicken and BBQ cuts, hand-prepared daily and delivered fresh across New Zealand.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

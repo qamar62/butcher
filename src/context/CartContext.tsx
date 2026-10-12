@@ -28,7 +28,7 @@ type CartCtx = {
 };
 
 const Ctx = createContext<CartCtx | null>(null);
-const STORAGE_KEY = "khanz-cart-v1";
+const STORAGE_KEY = "makkah-cart-v1";
 
 export const unitPriceFor = (p: Product, weight?: string) => {
   const w = p.weights?.find((x) => x.label === weight);

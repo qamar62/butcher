@@ -324,7 +324,7 @@ export function WhyUs() {
     <section className="relative overflow-hidden bg-cream py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-4 md:px-6 lg:grid-cols-2">
         <div>
-          <SectionTitle center={false} kicker="Why choose us" title={<>What sets <span className="text-brand">Khanz</span> apart</>} />
+          <SectionTitle center={false} kicker="Why choose us" title={<>What sets <span className="text-brand">Makkah</span> apart</>} />
           <div className="mt-10 space-y-5">
             {points.map((p, i) => (
               <Reveal key={p.t} delay={i * 0.12} dir="right">
@@ -338,7 +338,7 @@ export function WhyUs() {
         </div>
         <Reveal dir="left" className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2.5rem]">
-            <Image src={img("photo-1599834255434-c137726a0637", 1000)} alt="Khanz butcher at the counter" fill sizes="50vw" className="object-cover" />
+            <Image src={img("photo-1599834255434-c137726a0637", 1000)} alt="Makkah Halal Meats butcher at the counter" fill sizes="50vw" className="object-cover" />
           </div>
           <motion.div animate={{ y: [0, -12, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className="absolute -left-6 top-12 rounded-2xl bg-white p-5 shadow-2xl">
             <span className="flex gap-1 text-amber-400">{Array.from({ length: 5 }).map((_, i) => <Star key={i} size={16} fill="currentColor" />)}</span>
@@ -363,7 +363,7 @@ export function Story() {
           <blockquote className="mt-8 font-display text-3xl font-medium leading-snug text-ink md:text-4xl">
             “A good butcher is judged by the cut, not the counter. Every piece of meat that leaves our shop is one we'd proudly serve to our own family.”
           </blockquote>
-          <p className="mt-8 font-display font-bold uppercase tracking-[0.25em] text-brand">— The Khan family, founders</p>
+          <p className="mt-8 font-display font-bold uppercase tracking-[0.25em] text-brand">— The founders, Makkah Halal Meats</p>
         </Reveal>
       </div>
       <div className="mx-auto mt-24 grid max-w-7xl items-center gap-16 px-4 md:px-6 lg:grid-cols-2">
@@ -372,7 +372,7 @@ export function Story() {
           <div className="relative aspect-[3/4] overflow-hidden rounded-[2rem]"><Image src={img("photo-1597417321971-45e034f7a993", 700)} alt="Meat counter" fill sizes="25vw" className="object-cover" /></div>
         </Reveal>
         <div>
-          <SectionTitle center={false} kicker="Our story" title={<>Rooted in tradition, <span className="text-brand">driven by passion</span></>} text="Khanz Butchery began with a simple promise: honest, properly-cut halal meat at a fair price. Generations of butchery know-how meet modern hygiene and cold-chain standards — so you get the old-school quality with today's convenience." />
+          <SectionTitle center={false} kicker="Our story" title={<>Rooted in tradition, <span className="text-brand">driven by passion</span></>} text="Makkah Halal Meats began with a simple promise: honest, properly-cut halal meat at a fair price. Generations of butchery know-how meet modern hygiene and cold-chain standards — so you get the old-school quality with today's convenience." />
           <Reveal delay={0.2}><BtnLink href="/shop" className="mt-10">Explore the counter</BtnLink></Reveal>
         </div>
       </div>

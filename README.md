@@ -1,4 +1,4 @@
-# Khanz Butchery — Next.js website
+# Makkah Halal Meats — Next.js website
 
 Premium halal butcher shop site for the New Zealand market (prices in NZD, GST-inclusive): sliding hero, home page, shop with filters, product pages and a cart with WhatsApp checkout.
 
@@ -81,7 +81,7 @@ CyberPanel → **Websites → List Websites → butcher.qaam.work → Manage →
 Keep everything that is already there and add this block **above the `vhssl { … }` section** (the existing `/.well-known/acme-challenge` context must stay so SSL renewals keep working):
 
 ```
-# ---------- Next.js app (Khanz Butchery) ----------
+# ---------- Next.js app (Makkah Halal Meats) ----------
 extprocessor nextbutcher {
   type                    proxy
   address                 127.0.0.1:3001

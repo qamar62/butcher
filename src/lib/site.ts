@@ -1,18 +1,18 @@
 // Central business details — edit these once and they update across the whole site.
 export const site = {
-  name: "Khanz Butchery",
-  short: "Khanz",
-  tagline: "Premium halal meat, cut fresh every morning",
+  name: "Makkah Halal Meats",
+  short: "Makkah",
+  tagline: "The fresh choice for quality halal meat",
   currency: "NZD",
   phone: "+64 21 000 0000", // TODO: replace with the real number
   whatsapp: "64210000000", // digits only, used for wa.me links
-  email: "hello@khanzbutchery.com",
+  email: "hello@makkahhalalmeats.co.nz",
   address: "Shop 0, Main Road, Auckland, New Zealand", // TODO: replace with the real address
   hours: "Daily 8:00 am – 7:00 pm",
   freeDeliveryOver: 150,
   deliveryFee: 12,
   cutOff: "Order before 3 PM for same-day delivery",
-  coupon: { code: "KHANZ20", percent: 20 },
+  coupon: { code: "MAKKAH20", percent: 20 },
   showRecipes: false, // set to true to bring back the Recipes section + menu links
 };
 
