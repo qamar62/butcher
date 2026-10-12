@@ -1,23 +1,27 @@
+import Image from "next/image";
 import Link from "next/link";
+import { site } from "@/lib/site";
 
-export default function Logo({ light = false }: { light?: boolean }) {
+/**
+ * Brand logo from /public/logo.png (transparent PNG, 557×220).
+ * `light` = used on dark backgrounds (footer, mobile menu): the logo sits on a white pill
+ * so its dark lettering stays readable.
+ */
+export default function Logo({ light = false, className = "" }: { light?: boolean; className?: string }) {
   return (
-    <Link href="/" className="group flex items-center gap-2.5" aria-label="Khanz Butchery home">
-      <span className="relative grid h-11 w-11 place-items-center rounded-full bg-brand text-white transition-transform duration-500 group-hover:rotate-[360deg]">
-        {/* Bull horns + K mark */}
-        <svg viewBox="0 0 48 48" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M8 10c0 7 4 10 9 10M40 10c0 7-4 10-9 10" />
-          <path d="M19 18v20M19 29l10-11M22 26l8 12" />
-        </svg>
-      </span>
-      <span className="leading-none">
-        <span className={`block font-display text-2xl font-bold tracking-tight ${light ? "text-white" : "text-ink"}`}>
-          KHANZ
-        </span>
-        <span className={`block text-[10px] font-semibold uppercase tracking-[0.35em] ${light ? "text-white/60" : "text-brand"}`}>
-          Butchery
-        </span>
-      </span>
+    <Link
+      href="/"
+      aria-label={`${site.name} home`}
+      className={`group inline-flex shrink-0 items-center ${light ? "rounded-2xl bg-white px-3 py-2" : ""} ${className}`}
+    >
+      <Image
+        src="/logo.png"
+        alt={site.name}
+        width={557}
+        height={220}
+        priority
+        className={`w-auto transition-transform duration-500 group-hover:scale-[1.03] ${light ? "h-14" : "h-12 sm:h-16"}`}
+      />
     </Link>
   );
 }
