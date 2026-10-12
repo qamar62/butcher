@@ -4,10 +4,10 @@ export const site = {
   short: "Makkah",
   tagline: "The fresh choice for quality halal meat",
   currency: "NZD",
-  phone: "+64 21 000 0000", // TODO: replace with the real number
-  whatsapp: "64210000000", // digits only, used for wa.me links
-  email: "hello@makkahhalalmeats.co.nz",
-  address: "Shop 0, Main Road, Auckland, New Zealand", // TODO: replace with the real address
+  phone: "+64 9 620 7080",
+  whatsapp: "64210000000", // TODO: real WhatsApp mobile number, digits only (e.g. 6421xxxxxxx)
+  email: "makkahhalalmeats25@gmail.com",
+  address: "139 Great South Road, Papatoetoe, Auckland",
   hours: "Daily 8:00 am – 7:00 pm",
   freeDeliveryOver: 150,
   deliveryFee: 12,
